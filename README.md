@@ -38,7 +38,7 @@ docker run -dit re-linux /bin/bash
 docker images # 列出镜像
 docker ps -a # 列出所有 conrainer
 docker container ls # 列出所有 conrainer
-docker exec -it re-linux /bin/bash # 进入已经运行的 container
+docker exec -it <container id> /bin/bash # 进入已经运行的 container
 docker stop $(docker ps -a -q) # 停止所有容器
 docker rm $(docker ps -a -q) # 删除所有容器
 docker rmi <image id> # 删除指定image（需要先停止对应的容器）
